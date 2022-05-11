@@ -26,7 +26,7 @@ def process_song_data(spark, input_data, output_data):
     song_data = 
     
     # read song data file
-    df = 
+    df = spark.read.csv("")
 
     # extract columns to create songs table
     songs_table = 
@@ -82,6 +82,10 @@ def process_log_data(spark, input_data, output_data):
 
 
 def main():
+    '''
+        - creates Spark session
+        
+    '''
     spark = create_spark_session()
     input_data = "s3a://udacity-dend/"
     output_data = ""
